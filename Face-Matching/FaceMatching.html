@@ -11,7 +11,21 @@
     </style>
 
   </head>
-  <body>
+  <body onload="generateFaces()">
+    <script>
+      var numberOfFaces = 5;
+      function generateFaces() {
+        var theLeftSide = document.getElementById("leftSide");
+        for (var i = 0; i < numberOfFaces; i++) {
+          var newImg = document.createElement("img");
+          newImg.src="smile.png";
+          newImg.style.top = Math.floor(400*Math.random())+"px";
+          newImg.style.left = Math.floor(400*Math.random())+"px";
+          theLeftSide.appendChild(newImg);
+        }
+      }
+
+    </script>
     <h1>Matching Game</h1><br>
     <p>Click on the extra smiling face on the left</p><br>
     <div id="leftSide">
