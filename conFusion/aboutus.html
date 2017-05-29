@@ -23,7 +23,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="200">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -94,8 +94,13 @@
                <hr>
             </div>
         </div>
+        <div class="row">
+          <div class="col-sm-10">
 
-        <div class="row row-content">
+
+
+
+        <div id="history" class="row row-content">
             <div class="col-xs-12 col-sm-8">
                 <h2>Our History</h2>
                 <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
@@ -136,7 +141,7 @@
         </div>
 
 
-        <div class="row row-content">
+        <div id="corporate" class="row row-content">
             <div class="col-xs-12 col-sm-8">
               <h2>Corporate Leadership</h2>
               <ul class="nav nav-tabs" role="tablist">
@@ -172,8 +177,79 @@
                 </div>
               </div>
             </div>
-          </div>
             <div class="row row-content">
+              <div class="col col-sm-8">
+                <div class="panel-group" id="accordion"
+                      role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingPeter">
+                            <h3 class="panel-title">
+                                <a role="button" data-toggle="collapse"
+                                     data-parent="#accordion" href="#peter1"
+                                     aria-expanded="true" aria-controls="peter1">
+                                    Peter Pan <small>Chief Epicurious Officer</small></a>
+                            </h3>
+                        </div>
+                        <div role="tabpanel" class="panel-collapse collapse in"
+                             id="peter1"    aria-labelledby="headingPeter">
+                            <div class="panel-body">
+                                <p> . . . </p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="panel panel-default">
+                           <div class="panel-heading" role="tab" id="headingDanny">
+                               <h3 class="panel-title">
+                                   <a class="collapsed" role="button" data-toggle="collapse"
+                                        data-parent="#accordion" href="#danny1"
+                                        aria-expanded="false" aria-controls="danny1">
+                                       Dhanasekaran Witherspoon <small>Chief Food Officer</small></a>
+                               </h3>
+                           </div>
+                           <div role="tabpanel" class="panel-collapse collapse"
+                                id="danny1"    aria-labelledby="headingDanny">
+                               <div class="panel-body">
+                                   <p> . . . </em></p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="panel panel-default">
+                           <div class="panel-heading" role="tab" id="headingAgumbe">
+                               <h3 class="panel-title">
+                                   <a class="collapsed" role="button" data-toggle="collapse"
+                                        data-parent="#accordion" href="#agumbe1"
+                                        aria-expanded="false" aria-controls="agumbe1">
+                                       Agumbe Tang <small>Chief Taste Officer</small></a>
+                               </h3>
+                           </div>
+                           <div role="tabpanel" class="panel-collapse collapse"
+                                id="agumbe1"    aria-labelledby="headingAgumbe">
+                               <div class="panel-body">
+                                   <p> . . . </em></p>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="panel panel-default">
+                           <div class="panel-heading" role="tab" id="headingAlberto">
+                               <h3 class="panel-title">
+                                   <a class="collapsed" role="button" data-toggle="collapse"
+                                        data-parent="#accordion" href="#alberto1"
+                                        aria-expanded="false" aria-controls="alberto1">
+                                       Alberto Somayya <small>Executive Chef</small></a>
+                               </h3>
+                           </div>
+                           <div role="tabpanel" class="panel-collapse collapse"
+                                id="alberto1"    aria-labelledby="headingAlberto">
+                               <div class="panel-body">
+                                   <p> . . . </em></p>
+                               </div>
+                           </div>
+                       </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div id="fact" class="row row-content">
               <div class="col-xs-12 col-sm-8">
                 <h2>Facts &amp; Figures</h2>
                 <div class="table-responsive">
@@ -217,6 +293,15 @@
             </div>
              <div>
                 <p style="padding:20px;"></p>
+            </div>
+            </div>
+            <nav class="hidden-xs col-sm-2" id="myScrollspy">
+            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+                <li><a href="#history">Our History</a></li>
+                <li><a href="#corporate">Corporate</a></li>
+                <li><a href="#facts">Facts</a></li>
+            </ul>
+        </nav>
             </div>
        </div>
 
